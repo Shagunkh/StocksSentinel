@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #2e3241;
+  padding: 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  margin:0;
+  padding: 0;
+}
+
+.left-section {
+  width: 450px;
+ 
+  background-color: #000000;
+  border-right: 1px solid #000000;
+  overflow-y: auto;
+}
+
+.right-section {
+  flex: 1;
+ 
+  overflow-y: auto;
+}
+.left-section {
+  width: 450px;
+  background-color: #000000;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
